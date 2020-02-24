@@ -22,16 +22,16 @@
             android:src="@drawable/icjuicy" />
 
         <TextView
+            android:id="@+id/icontitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Juicy"
             android:layout_gravity="center"
-            android:fontFamily="@font/mregular"
-            android:textColor="@color/colorPrimaryDark"
             android:layout_marginTop="10dp"
-            android:textSize="18sp"
             android:alpha=""
-            />
+            android:fontFamily="@font/mregular"
+            android:text="Juicy"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
 
 
 

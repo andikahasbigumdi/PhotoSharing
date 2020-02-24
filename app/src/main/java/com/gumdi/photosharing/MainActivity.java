@@ -16,7 +16,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView ic_addphoto,ic_photo , ic_addpicture ;
-//    View viewjalan;
     Button pagemenu , pagechat , dotmenu;
     ImageView ic_chat;
     Animation buttom_tp_top,buttom_tp_two,imgbounes;
