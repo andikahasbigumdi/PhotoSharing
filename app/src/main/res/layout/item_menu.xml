@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:alpha=""
             android:fontFamily="@font/mregular"
             android:text="Juicy"
             android:textColor="@color/colorPrimaryDark"

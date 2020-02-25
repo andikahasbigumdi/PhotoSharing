@@ -32,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
         ic_addphoto = findViewById(R.id.add_photo);
         ic_addphoto.setPaintFlags(ic_addphoto.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
+        //give an event to next act
+        ic_addphoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent perpindah = new Intent(MainActivity.this, PhotoCateAct.class);
+                startActivity(perpindah);
+            }
+        });
+
         ic_photo = findViewById(R.id.photo);
         ic_addpicture = findViewById(R.id.Add_picture);
 
@@ -77,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
                ic_photo.setText("No Photo");
                ic_addpicture.setText("Add Picture on your circle ");
 
-               ic_photo.setText("Add Photo");
-               ic_photo.setTextColor(Color.parseColor("#706AC9"));
+               ic_addphoto.setText("Add Photo");
+               ic_addphoto.setTextColor(Color.parseColor("#706AC9"));
 
 //                animation di text saat diklik button pagechat
                 ic_chat.startAnimation(imgbounes);
@@ -97,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
         ic_addphoto.setOnClickListener(new View.OnClickListener() {
             @Override

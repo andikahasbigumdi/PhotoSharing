@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhotoCateAct">
+    tools:context=".ChoseUsernameAct">
 
     <TextView
         android:id="@+id/textView"
@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/mmedium"
         android:lineSpacingExtra="6dp"
-        android:text="@string/catelist"
+        android:text="@string/choseusername"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
@@ -28,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/retangglebutton"
         android:fontFamily="@font/mmedium"
@@ -38,19 +38,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myCateList" />
+        app:layout_constraintTop_toBottomOf="@+id/userNameStory" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/myCateList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:paddingLeft="140dp"
-        android:paddingRight="100dp"
-        android:clipToPadding="false"
-
+    <ImageView
+        android:id="@+id/imageusername"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/icsearchusername" />
+
+    <EditText
+        android:id="@+id/userNameStory"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bginputall"
+        android:ems="10"
+        android:fontFamily="@font/mregular"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#1abc9c"
+        android:textColorHint="#969696"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageusername" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

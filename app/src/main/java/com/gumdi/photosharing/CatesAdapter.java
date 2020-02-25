@@ -35,7 +35,6 @@ public class CatesAdapter extends RecyclerView.Adapter<CatesAdapter.CatesViewHol
     public void onBindViewHolder(@NonNull CatesViewHolder catesViewHolder, int position) {
 
         Cates cates = catesList.get(position);
-
         catesViewHolder.icontitle.setText(cates.getIcontitle());
         catesViewHolder.iconimg.setImageDrawable(context.getResources().
                 getDrawable(cates.getIconimg()));

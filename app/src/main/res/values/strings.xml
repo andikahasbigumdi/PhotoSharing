@@ -6,4 +6,6 @@
     <string name="catelist">What is your \nActivity For Today ?</string>
     <string name="s">Continue</string>
     <string name="Juicy">Juicy</string>
+    <string name="choseusername">We Need to Setup \nyour Username Frist</string>
+    <string name="username">Add Your Username</string>
 </resources>
