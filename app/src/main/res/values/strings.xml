@@ -8,4 +8,6 @@
     <string name="Juicy">Juicy</string>
     <string name="choseusername">We Need to Setup \nyour Username Frist</string>
     <string name="username">Add Your Username</string>
+    <string name="phototime">Photo Time</string>
+    <string name="descrip_phtotime">You Could add it from \nyou gallery</string>
 </resources>

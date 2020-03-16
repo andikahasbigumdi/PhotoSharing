@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -51,6 +52,15 @@ public class PhotoCateAct extends AppCompatActivity {
         catesList.add(
                 new Cates("Prize", R.drawable.icprize)
         );
+
+        btnsavecate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PhotoCateAct.this, ChoseUsernameAct.class);
+                startActivity(intent);
+
+            }
+        });
 
         myCateList= findViewById(R.id.myCateList);
         final LinearLayoutManager linearLayoutManager = new
