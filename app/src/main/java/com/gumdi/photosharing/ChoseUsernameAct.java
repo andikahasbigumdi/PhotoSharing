@@ -34,8 +34,8 @@ public class ChoseUsernameAct extends AppCompatActivity {
         setContentView(R.layout.activity_chose_username);
 
 
-//        loadDataUsernameLocal();
-//        checkUsernameLocal();
+        loadDataUsernameLocal();
+        checkUsernameLocal();
 
         userNameStory = findViewById(R.id.userNameStory);
         buttonsaveusername = findViewById(R.id.btnsaveusername);
@@ -78,4 +78,23 @@ public class ChoseUsernameAct extends AppCompatActivity {
             }
         });
     }
+
+    public void loadDataUsernameLocal() {
+            SharedPreferences sharedPreferences= getSharedPreferences(USER_NAME_STORY,MODE_PRIVATE);
+            userNameStoryNew = sharedPreferences.getString(userNameStoryLocal,"");
+
+
+    }
+
+    private void checkUsernameLocal(){
+     if (userNameStoryNew.isEmpty()) {
+
+     }
+     else {
+         Intent pindah = new Intent(ChoseUsernameAct.this , AddPhotoAct.class);
+         startActivity(pindah);
+
+     }
+    }
+
 }
